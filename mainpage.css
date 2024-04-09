@@ -1,0 +1,442 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
+
+html{
+    font-size: 70%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
+}
+
+body{
+    margin: 0; 
+    padding: 0; 
+    background-image: url(); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.wrapper{
+    margin: 0 auto;
+ 
+}
+
+
+.upper-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #22242b;
+    height: 40px;
+}
+
+.down-header {
+    display: flex;
+    justify-content: center;
+    background-color: #565c68; 
+}
+.upper-list {
+    list-style-type: none;
+    padding: 5px;
+    display: flex;
+}
+.upper-header a img {
+    margin-left: 200px;
+    height: 40px;
+    width: 80px;
+    
+}
+.upper-list li {
+    margin-right: 5px;
+    margin-bottom: 1px;
+    display: inline-block;
+    line-height: 30px;
+    padding: 5px;
+}
+.upper-list a:hover {
+    text-decoration: underline; 
+}
+
+.upper-list a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #d6d8d9;
+}
+
+.search-bar {
+    margin-left: 10px;
+    border: 1px solid #d6d8d9; 
+    border-radius: 20px; 
+    padding: 8px; 
+    outline: none; 
+}
+    
+.down-list{
+    list-style-type: none;
+   
+}
+
+.dropbtn {
+  color: #d6d8d9;
+  padding: 10px;
+  font-size: 12px;
+  border: none;
+  background-color: #565c68; 
+  text-align: center;
+  justify-content: space-between;
+}
+
+.dropbtn:hover{
+    background-color: white;
+}
+
+
+
+  .dropdown {
+    margin: 0 15px;
+    position: relative;
+    display: inline-block;
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; 
+}
+
+
+.dropdown-content a:hover {
+  background-color: #e6e6e6c9;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.search-bar:focus {
+    border: 2px solid #3498db;
+}
+
+.dropdowndate{
+    background-color: white;
+}
+
+.dropdowndate ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 25px;
+}
+
+.dropdowndate li {
+    margin-right: 5px; 
+}
+
+.dropdowndate a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+
+.dropdowndate a:hover {
+    background-color: #e6e6e6c9;
+}
+
+.concertimg {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    filter: brightness(0.5);
+}
+
+
+.concertimg img {
+    width: 100%;
+    height: 250px;
+}
+
+
+ .overview {
+    align-items: center;
+    justify-content:center ;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    color: #bbc4ca;
+    font-size: 15px;
+ }
+ @media all and (max-width: 1110px) {
+    .overview {
+      display: none;
+    }
+  }
+
+
+.overview h1 {
+    margin-top: 40;
+    padding: -20px;
+}
+
+.body{
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px;
+    
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 200px;
+    font-size: 17px;
+    position: relative;
+    right: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 200px;
+}
+
+
+.body {
+    flex: 1; 
+    margin: 0 120px; 
+}
+
+@media (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+        height: auto; /* Set height to auto to accommodate variable height of stacked cards */
+    }
+  
+    .body {
+        margin: 20px; /* Adjust margin for better spacing between stacked cards */
+    }
+}
+
+@media (max-width: 1000px) {
+    .container2 {
+        flex-direction: column;
+        height: auto; /* Set height to auto to accommodate variable height of stacked cards */
+    }
+  
+    .body {
+        margin: 20px; /* Adjust margin for better spacing between stacked cards */
+    }
+}
+
+.music_button {
+    padding: 10px;
+    transition: transform .2s; 
+    width: 300px;
+    height: 130px;
+    margin: 0 auto;
+}
+
+.music_button:hover {
+    transform: scale(1.1);
+}
+
+.music_text{
+    position: absolute;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+
+}
+.cards{
+    position: relative;
+    width: 300px; 
+}
+
+.container2 {
+    width: 900px; 
+    margin: 10px auto; 
+    padding: 20px; 
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    display: flex;
+    justify-content: center; 
+    position: relative;
+    top: 50px;
+}
+
+.title1 {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+}
+
+.title2 {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    top: 40px;
+    right: 20px;
+    
+}
+
+.hr1{
+    background-color: black;
+    position: relative;
+    top: 25px;
+    opacity: 1;
+    height: 0.5px;
+}
+.line{
+    background-color: black;
+    position: relative;
+    top: 25px;
+    opacity: 1;
+    height: 0.5px;
+
+}
+.img-carrito{
+    position: relative;
+    width: 10%;
+    left: 250px;
+}
+/*------------------------------------------------------------footer*/
+.container3 {
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    padding: 1px 1px;
+    
+}
+
+
+.feedback-form {
+    width: 20%;
+    padding: 2px;
+    background-color: #ffffff;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); /* Add shadow */
+    border-radius: 5px; /* Add rounded corners */
+    font-size: 20px;
+    top: 30px;
+    position: relative;
+}
+
+.feedback-form h2 {
+    color: #333;
+    font-size: 1.2em;
+}
+
+.contact-info {
+    width: 20%;
+    padding: 2px;
+    background-color: #ffffff;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); /* Add shadow */
+    border-radius: 5px; /* Add rounded corners */
+    font-size: 20px;
+    top: 30px;
+    position: relative;
+}
+
+.contact-info h2 {
+    color: #333;
+    font-size: 1.2em;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 60%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 100px; 
+    background-size: cover;
+    background-color: black;
+    position: relative;
+}
+
+.social-icons a::before {
+    content: ""; /* Create a pseudo-element for the icon */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+}
+
+.twitter-icon {
+    background-image: url('/pics/twitter.png');
+}
+
+.instagram-icon {
+    background-image: url('/pics/instagram.png');
+}
+@media (max-width: 1000px) {
+    .container3 {
+        flex-direction: column;
+        height: auto; /* Adjust height to accommodate stacked elements */
+    }
+  
+    .feedback-form,
+    .contact-info {
+        width: 100%; /* Make both sections take full width */
+        margin-bottom: 20px; /* Add some space between stacked elements */
+    }
+
+    .social-icons {
+        margin-right: 0; /* Remove right margin for social icons */
+    }
+}
